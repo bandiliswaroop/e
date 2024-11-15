@@ -34,6 +34,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 <html>
 <head>
     <title>Registration</title>
+<link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <h2>Register</h2>
@@ -78,6 +79,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 <html>
 <head>
     <title>Login</title>
+<link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <h2>Login</h2>
@@ -107,6 +109,7 @@ if (!isset($_SESSION['user_id'])) {
 <html>
 <head>
     <title>Welcome to Book Shop</title>
+<link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <h1>Welcome to Book Shop!</h1>
@@ -114,4 +117,87 @@ if (!isset($_SESSION['user_id'])) {
     <a href="logout.php">Logout</a>
 </body>
 </html>
+
+styles.css
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 20px;
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+h2 {
+    color: #555;
+}
+
+
+button, a {
+    display: inline-block;
+    text-decoration: none;
+    background-color: #007BFF;
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover, a:hover {
+    background-color: #0056b3;
+}
+
+form {
+    margin-top: 20px;
+}
+
+input[type="text"], input[type="email"], input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+button {
+    width: 100%;
+}
+
+
+a {
+    text-align: center;
+    margin-top: 10px;
+    display: block;
+    font-size: 14px;
+    color: #007BFF;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+p {
+    text-align: center;
+    font-size: 16px;
+    margin-top: 20px;
+}
 
